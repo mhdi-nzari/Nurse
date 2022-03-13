@@ -1,0 +1,250 @@
+section#service
+     .container-fluid 
+          .row 
+               .headline
+                    .headline--content.d-md-block.d-none
+                    h4.headline--title خدمات ما
+               p.text-center.mt-4.title ما ارائه دهنده خدمات بهینه و با صرفه هستیم !
+
+
+     .container#boxs
+          .row 
+               .col-xl-3.col.lg-4.col-md-6.col-12.mb-5
+                    figure.service--box
+                         .service--box--icon
+                              img.services--box--icon__ico(src="./src/img/1.png",    alt="img-1")
+                         
+                         figcaption.service--box--caption
+                              h4.service--box--caption__title پرستاری از سالمندان
+                              p.service--box--caption__discription با داشتن پرسنل مجرب و توانا سالمندان خود را به بهترین ما بسپارید.
+                              a.service--box--caption--click(href="#")
+                                        i.fas.fa-arrow-left
+               .col-xl-3.col.lg-4.col-md-6.col-12.mb-5
+                    figure.service--box 
+                         .service--box--icon
+                              img.services--box--icon__ico(src="./src/img/2.png",    alt="img-1")
+                         
+                         figcaption.service--box--caption
+                              h4.service--box--caption__title پرستاری از بیماران
+                              p.service--box--caption__discription تیم پزشکی ما همواره در 2 ساعت از شبانه روز آماده خدمات رسانی میباشد.
+                              a.service--box--caption--click(href="#")
+                                        i.fas.fa-arrow-left
+               .col-xl-3.col.lg-4.col-md-6.col-12.mb-5
+                    figure.service--box 
+                         .service--box--icon
+                              img.services--box--icon__ico(src="./src/img/3.png",    alt="img-1")
+                         
+                         figcaption.service--box--caption
+                              h4.service--box--caption__title پرستاری از کودکان
+                              p.service--box--caption__discription تیم مجرب  مراقبت همواره آماده و نگهداری از کودکان دلبندتان میباشد.
+                              a.service--box--caption--click(href="#")
+                                        i.fas.fa-arrow-left
+               .col-xl-3.col.lg-4.col-md-6.col-12.mb-5
+                    figure.service--box 
+                         .service--box--icon
+                              img.services--box--icon__ico(src="./src/img/4.png",    alt="img-1")
+                         
+                         figcaption.service--box--caption
+                              h4.service--box--caption__title معاینه در منزل
+                              p.service--box--caption__discription با داشتن پرسنل مجرب و توانا سالمندان خود را به بهترین ما بسپارید.
+                              a.service--box--caption--click(href="#")
+                                        i.fas.fa-arrow-left
+
+
+
+section#about-us
+
+
+     .container
+          .row.d-flex
+
+               .col-xl-4.col-lg-4.col-md-3.col-12.d-flex.justify-content-center
+                    a.section--right(href="javascript:void(0)")
+                         picture.section--right--box 
+                              img.section--right--box__img(src="./src/img/pic.jpg", alt="pic-about") 
+               .col-xl-8.col-lg-8.col-md-9.col-12
+                    .about--us--content 
+                         .headline
+                              .headline--content.d-md-block.d-none
+                              h4.headline--title درباره ما 
+                         p#title.text-center.mt-4.title  آنچه در باره ما میگویند و شما دوست دارید بشنوید ؟!
+                         .discription--box
+                              p#discription با تیم ما برترین خدمات درمانی را تجربه خواهید کرد آنچه که انتظارش را ندارید در دستان توانمند ماست . حتما از خدمات در مانی مااستفاده کنید . خدمات درمانی ، فروشگاه ، خدمات در منزل و ... اینها موارد و خدمات کوچک از تیم حرفه ای و ماهر ما میباشد. آنچه که توقع آن را دارید ما و تیم مجرب مان برای شما فراهم خواهند ساخت.
+                         .more
+                                   a(href="#").Information درباره ما  
+                                        i.me-3.fa-solid.fa-angle-left
+
+
+section#news
+     .container-fluid 
+          .row 
+               .headline
+                    .headline--content.d-md-block.d-none
+                    h4.headline--title اخبار و مقالات
+               p.text-center.mt-4.title جدیدترین اخبار و مقالات ما
+
+     .container
+         
+          .swiper 
+               .swiper-wrapper
+                    each val in ['./src/img/blog.png' , './src/img/blog-post-1.jpg' , './src/img/blog.png' , './src/img/blog-post-1.jpg']                   
+                         .swiper-slide
+
+                              figure.blog--item
+                                   .blog--item--article
+                                        a.blog--item__link(href="javascript:void(0)")
+                                             img.blog--item__link__img.img-fluid(src=val, alt="blog-post-1" loading='lazy') 
+
+                                   figcaption.blog--item--caption 
+                              
+                                        a(href="javascript:void(0)") 
+                                             h3.blog--item--caption__title آموزش خود درمانی در بزرگسالان
+                                        p.blog--item--caption__disc در جوامع امروزی تنها موضوعی که مورد بحث و تحلیل قرار میگیرد خود درمانی همزمان با کهولت سن است که در برخی افراد شایع دیده شد . پس میتوان نتیجه گرفت  تنها راه نجات از بیماری صعب العلاج قرار داد 
+                                        .calltoaction.mt-3     
+                                             a.blog--item--caption--calltoaction(href="javascript:void(0)")     ادامه مطلب...
+               .button--info
+                    a(href="javascript:void(0)").callToAction  مشاهده همه مقالات
+                    
+                         
+               .swiper-pagination
+
+          
+section#videos
+     .container 
+          .video--header
+               i.fa-solid.fa-circle-play.fa-2x.ms-4.video--header__logo.img-fluid
+               span.video--header__title.title جدیدترین ویدیوها
+
+               
+     .container 
+          .row.video--box 
+               figure.video--box--wrapper.p-0
+                    img.video--box--wrapper__img(src="./src/img/spec.jpg", alt="alt").img-fluid
+                    a.video--box--wrapper__icon(href="javascript:void(0)") 
+                         i.fa-solid.fa-circle-play.fa-4x.img-fluid.fa-inverse
+                    figcaption.video--box--caption
+                         .video--box--caption__tag
+                              span آموزشی 
+                              span علمی
+                              span ورزشی 
+                              span گردشی
+                         a(href="javascript:void(0)").video--box--caption__title  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                         .video--box--caption--discription 
+                              .video--box--caption--discription__time 
+                                   i.fa-regular.fa-clock.fa-1x.video--box--caption--discription__time__ico
+                                   span.video--box--caption--discription__time__day 10
+                                   span.video--box--caption--discription__time__month مهر 
+                                   span.video--box--caption--discription__time__year 1399
+
+                              .video--box--caption--discription__view 
+                                   i.fa-solid.fa-fire-flame-curved.fa-2x 
+                                   span.video--box--caption--discription__view__number 553،879
+
+                              
+          .row 
+               .swiper#swiper_video 
+                    .swiper-wrapper
+                              each val in ['./src/img/carusel-1.jpg' , './src/img/carusel-2.jpg'  , './src/img/carusel-3.jpg']                   
+                                                 
+                                   .swiper-slide
+                                        figure.video--item
+                                             img.video--item__img(src=val, alt="alt")
+                                             i.fa-solid.fa-circle-play.fa-3x.video--item__logo.fa-inverse.img-fluid
+
+                                             figcaption.video--item--caption
+                                                 
+                                                  .video--item--caption--title 
+                                                            a(href="javascript:void(0)") 
+                                                                 h3.video--item--caption--title__text خرید لوازم بهداشتی از سرای ایرانی  
+                                                  .video--item--caption--discription 
+                                                       .video--item--caption--discription__time 
+                                                            i.fa-regular.fa-clock.fa-1x.video--item--caption--discription__time__ico
+                                                            span.video--item--caption--discription__time__day 10
+                                                            span.video--item--caption--discription__time__month مهر 
+                                                            span.video--item--caption--discription__time__year 1399
+
+                                                       .video--item--caption--discription__view 
+                                                            i.fa-solid.fa-fire-flame-curved.fa-2x 
+                                                            span.video--item--caption--discription__view__number 553،879
+
+
+footer#footer 
+     .container
+          .row.footer      
+               .col-xl-4.col-lg-4 
+                    .footer--info  
+                         .footer--info--header
+                              .footer--info--header--ico
+                                   i.fa-solid.fa-phone.fa-2x 
+                              .footer--info--header--infocall 
+                                   span.footer--info--header--infocall__text شماره تماس
+                                   a(href="tel:10101010").footer--info--header--infocall__number 444562 031
+
+                         .divider 
+                         .footer--info--content
+                              .footer--info--content--sectionone
+                                   img.footer--info--content--sectionone__img(src="./src/img/logo (1).png", alt="logo")
+                                   h4.footer--info--content--sectionone__text مرکز درمان در منزل لورم
+                              .footer--info--content--sectiontwo 
+                                   p.footer--info--content--sectiontwo__discription ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+
+                              .footer--info--content--social 
+                                   .footer--info--content--social__email
+                                        i.fa-solid.fa-at.footer--info--content--social__email__ico
+                                        a.footer--info--content--social__email__text(href="mailto:info@lorem.com") info@lorem.com 
+                                   .footer--info--content--social__location
+                                        i.fa-solid.fa-location-dot.footer--info--content--social__location__ico
+                                        a.footer--info--content--social__location__text(href="mailto:info@lorem.com")  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                                   
+
+                                   .footer--info--content--social__network      
+                                        a.footer--info--content--social__network__link(href="javascript:void(0)") 
+                                             i.fa-brands.fa-google.fa-1x
+                                        a.footer--info--content--social__network__link(href="javascript:void(0)") 
+                                             i.fa-brands.fa-telegram.fa-1x
+                                        a.footer--info--content--social__network__link(href="javascript:void(0)") 
+                                             i.fa-brands.fa-whatsapp.fa-1x
+                                        a.footer--info--content--social__network__link(href="javascript:void(0)") 
+                                             i.fa-brands.fa-linkedin.fa-1x
+                                        a.footer--info--content--social__network__link(href="javascript:void(0)") 
+                                             i.fa-brands.fa-twitter.fa-1x
+                                        a.footer--info--content--social__network__link(href="javascript:void(0)") 
+                                             i.fa-brands.fa-pinterest.fa-1x
+                                        a.footer--info--content--social__network__link(href="javascript:void(0)") 
+                                             i.fa-brands.fa-facebook.fa-1x
+
+
+
+
+               .col-xl-4.col-lg-4 
+                    .headline
+                         .headline--content.d-md-block.d-none
+                         h4.headline--title.text-white دسترسی آسان
+                    .links
+                         ul.quickaccess 
+                              a.quickaccess__link(href="javascript:void(0)") 
+                                   li.quickaccess__link__item صفحه اصلی
+                              a.quickaccess__link(href="javascript:void(0)") 
+                                   li.quickaccess__link__item درباره ما
+                              a.quickaccess__link(href="javascript:void(0)") 
+                                   li.quickaccess__link__item خروج
+                         ul.quickaccess 
+                              a.quickaccess__link(href="javascript:void(0)") 
+                                   li.quickaccess__link__item قوانین و مقرران
+                              a.quickaccess__link(href="javascript:void(0)") 
+                                   li.quickaccess__link__item سوالات متداول
+                              a.quickaccess__link(href="javascript:void(0)") 
+                                   li.quickaccess__link__item ارتباط با ما   
+                    
+               .col-xl-4.col-lg-4 
+                    .headline#headline
+                         .headline--content.d-md-block.d-none
+                         h4.headline--title.text-white جدیدترین اخبار
+                    .wrapper--posts
+                         each val in ['./src/img/lower1.jpg','./src/img/lower2.jpg','./src/img/lower3.jpg','./src/img/lower4.jpg' , './src/img/lower5.jpg' , './src/img/lower6.jpg']
+                              a(href="javascript:void(0)") 
+                                   img(src=val, alt="item")
+          .row.footer--product
+               .divider 
+               a.footer--product__text(href="https://datlearn.ir/") کلیه حقوق مادی و معنوی این وب سایت محفوظ می باشد ©2021 / توسعه با 💜 توسط مهدی نظری 
+
